@@ -17,9 +17,7 @@ struct ContentView: View {
                 .padding(.top, 100)
             Spacer()
             
-            Button("Start") {
-                timer -= 1
-            }
+            ButtonView(timer: $timer)
             
             Spacer()
         }
@@ -30,5 +28,15 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+struct ButtonView: View {
+    @Binding var timer: Int
+    
+    var body: some View {
+        Button("Start") {
+            timer -= 1
+        }
     }
 }
