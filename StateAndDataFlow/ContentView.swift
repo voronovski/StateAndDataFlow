@@ -8,12 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var timer = 3
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text(timer.formatted())
+                .font(.largeTitle)
+                .padding(.top, 100)
+            Spacer()
+            
+            Button("Start") {
+                timer -= 1
+            }
+            
+            Spacer()
         }
         .padding()
     }
