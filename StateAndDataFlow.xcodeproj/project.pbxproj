@@ -15,6 +15,7 @@
 		FA532C4929DD344900A3C58D /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA532C4829DD344900A3C58D /* RegisterView.swift */; };
 		FA532C4B29DD35F000A3C58D /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA532C4A29DD35F000A3C58D /* UserManager.swift */; };
 		FA532C4D29DD390E00A3C58D /* StarterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA532C4C29DD390E00A3C58D /* StarterView.swift */; };
+		FA532C4F29DD4D6600A3C58D /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA532C4E29DD4D6600A3C58D /* StorageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		FA532C4829DD344900A3C58D /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		FA532C4A29DD35F000A3C58D /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		FA532C4C29DD390E00A3C58D /* StarterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterView.swift; sourceTree = "<group>"; };
+		FA532C4E29DD4D6600A3C58D /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				FA532C4829DD344900A3C58D /* RegisterView.swift */,
 				FA532C4C29DD390E00A3C58D /* StarterView.swift */,
 				FA532C4A29DD35F000A3C58D /* UserManager.swift */,
+				FA532C4E29DD4D6600A3C58D /* StorageManager.swift */,
 				FA532C3829DA90F500A3C58D /* StateAndDataFlowApp.swift */,
 				FA532C3A29DA90F500A3C58D /* ContentView.swift */,
 				FA532C4629DAA8B600A3C58D /* TimeCounter.swift */,
@@ -152,6 +155,7 @@
 				FA532C4729DAA8B600A3C58D /* TimeCounter.swift in Sources */,
 				FA532C4929DD344900A3C58D /* RegisterView.swift in Sources */,
 				FA532C4D29DD390E00A3C58D /* StarterView.swift in Sources */,
+				FA532C4F29DD4D6600A3C58D /* StorageManager.swift in Sources */,
 				FA532C3B29DA90F500A3C58D /* ContentView.swift in Sources */,
 				FA532C4B29DD35F000A3C58D /* UserManager.swift in Sources */,
 				FA532C3929DA90F500A3C58D /* StateAndDataFlowApp.swift in Sources */,

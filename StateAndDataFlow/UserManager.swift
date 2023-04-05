@@ -8,6 +8,6 @@
 import Foundation
 
 class UserManager: ObservableObject {
-    @Published var isRegister = false
-    var name = ""
+    let name = StorageManager.shared.fetchName()
+    @Published var isRegister = StorageManager.shared.fetchIsRegister()
 }
