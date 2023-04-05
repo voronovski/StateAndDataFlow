@@ -12,6 +12,7 @@
 		FA532C3D29DA90F600A3C58D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA532C3C29DA90F600A3C58D /* Assets.xcassets */; };
 		FA532C4029DA90F600A3C58D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA532C3F29DA90F600A3C58D /* Preview Assets.xcassets */; };
 		FA532C4729DAA8B600A3C58D /* TimeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA532C4629DAA8B600A3C58D /* TimeCounter.swift */; };
+		FA532C4929DD344900A3C58D /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA532C4829DD344900A3C58D /* RegisterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		FA532C3C29DA90F600A3C58D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA532C3F29DA90F600A3C58D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FA532C4629DAA8B600A3C58D /* TimeCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCounter.swift; sourceTree = "<group>"; };
+		FA532C4829DD344900A3C58D /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 		FA532C3729DA90F500A3C58D /* StateAndDataFlow */ = {
 			isa = PBXGroup;
 			children = (
+				FA532C4829DD344900A3C58D /* RegisterView.swift */,
 				FA532C3829DA90F500A3C58D /* StateAndDataFlowApp.swift */,
 				FA532C3A29DA90F500A3C58D /* ContentView.swift */,
 				FA532C4629DAA8B600A3C58D /* TimeCounter.swift */,
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA532C4729DAA8B600A3C58D /* TimeCounter.swift in Sources */,
+				FA532C4929DD344900A3C58D /* RegisterView.swift in Sources */,
 				FA532C3B29DA90F500A3C58D /* ContentView.swift in Sources */,
 				FA532C3929DA90F500A3C58D /* StateAndDataFlowApp.swift in Sources */,
 			);
