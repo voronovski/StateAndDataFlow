@@ -13,6 +13,8 @@
 		FA532C4029DA90F600A3C58D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA532C3F29DA90F600A3C58D /* Preview Assets.xcassets */; };
 		FA532C4729DAA8B600A3C58D /* TimeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA532C4629DAA8B600A3C58D /* TimeCounter.swift */; };
 		FA532C4929DD344900A3C58D /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA532C4829DD344900A3C58D /* RegisterView.swift */; };
+		FA532C4B29DD35F000A3C58D /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA532C4A29DD35F000A3C58D /* UserManager.swift */; };
+		FA532C4D29DD390E00A3C58D /* StarterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA532C4C29DD390E00A3C58D /* StarterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		FA532C3F29DA90F600A3C58D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FA532C4629DAA8B600A3C58D /* TimeCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCounter.swift; sourceTree = "<group>"; };
 		FA532C4829DD344900A3C58D /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		FA532C4A29DD35F000A3C58D /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		FA532C4C29DD390E00A3C58D /* StarterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			isa = PBXGroup;
 			children = (
 				FA532C4829DD344900A3C58D /* RegisterView.swift */,
+				FA532C4C29DD390E00A3C58D /* StarterView.swift */,
+				FA532C4A29DD35F000A3C58D /* UserManager.swift */,
 				FA532C3829DA90F500A3C58D /* StateAndDataFlowApp.swift */,
 				FA532C3A29DA90F500A3C58D /* ContentView.swift */,
 				FA532C4629DAA8B600A3C58D /* TimeCounter.swift */,
@@ -145,7 +151,9 @@
 			files = (
 				FA532C4729DAA8B600A3C58D /* TimeCounter.swift in Sources */,
 				FA532C4929DD344900A3C58D /* RegisterView.swift in Sources */,
+				FA532C4D29DD390E00A3C58D /* StarterView.swift in Sources */,
 				FA532C3B29DA90F500A3C58D /* ContentView.swift in Sources */,
+				FA532C4B29DD35F000A3C58D /* UserManager.swift in Sources */,
 				FA532C3929DA90F500A3C58D /* StateAndDataFlowApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
