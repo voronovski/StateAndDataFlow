@@ -21,14 +21,16 @@ struct ContentView: View {
                 .padding(.top, 100)
             Spacer()
             
-            ButtonView(timer: timer)
+            StartButtonView(timer: timer)
             Spacer()
+            
+            LogOutButtonView()
         }
         .padding()
     }
 }
 
-struct ButtonView: View {
+struct StartButtonView: View {
     @ObservedObject var timer: TimeCounter
     
     var body: some View {
@@ -46,6 +48,32 @@ struct ButtonView: View {
                 .stroke(.white, lineWidth: 4)
         )
         .shadow(radius: 9, x: 0, y: 5)
+    }
+}
+
+struct LogOutButtonView: View {
+    @EnvironmentObject private var user: UserManager
+    
+    var body: some View {
+        Button(action: logOut) {
+            Text("Log Out")
+                .font(.title)
+                .fontWeight(.bold)
+                .foregroundColor(.white)
+        }
+        .frame(width: 200, height: 60)
+        .background(.blue)
+        .cornerRadius(20)
+        .overlay(
+            RoundedRectangle(cornerRadius: 20)
+                .stroke(.white, lineWidth: 4)
+        )
+        .shadow(radius: 9, x: 0, y: 5)
+    }
+    
+    private func logOut() {
+        StorageManager.shared.deleteName(name: user.name)
+        user.isRegister.toggle()
     }
 }
 

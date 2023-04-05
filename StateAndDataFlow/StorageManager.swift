@@ -29,7 +29,7 @@ class StorageManager {
     }
     
     func fetchIsRegister() -> Bool {
-        if let _ = defaults.string(forKey: nameKey) {
+        if defaults.string(forKey: nameKey) != "" {
             return true
         }
         return false

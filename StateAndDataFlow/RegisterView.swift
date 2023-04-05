@@ -32,12 +32,9 @@ struct RegisterView: View {
     }
     
     private func registerUser() {
-        if !name.isEmpty {
-//            user.name = name
-//            user.isRegister.toggle()
-            UserDefaults.standard.set(name, forKey: "name")
-            UserDefaults.standard.set(true, forKey: "isRegister")
-        }
+        StorageManager.shared.save(name: name)
+        user.name = name
+        user.isRegister.toggle()
     }
 }
 
