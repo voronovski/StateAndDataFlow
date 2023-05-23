@@ -22,17 +22,11 @@ class StorageManager {
     }
     
     func fetchName() -> String {
-        if let name = defaults.string(forKey: nameKey) {
-            return name
-        }
-        return ""
+        defaults.string(forKey: nameKey) ?? ""
     }
     
     func fetchIsRegister() -> Bool {
-        if defaults.string(forKey: nameKey) != "" {
-            return true
-        }
-        return false
+        defaults.string(forKey: nameKey) != ""
     }
     
     func deleteName(name: String) {
