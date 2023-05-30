@@ -18,8 +18,8 @@ struct ButtonView: View {
                 .font(.title)
                 .fontWeight(.bold)
                 .foregroundColor(.white)
+                .frame(width: 200, height: 60)
         }
-        .frame(width: 200, height: 60)
         .background(color)
         .cornerRadius(20)
         .overlay(
