@@ -21,20 +21,16 @@ struct ContentView: View {
                 .padding(.top, 100)
             Spacer()
             
-            ButtonView(
-                title: timer.buttonTitle,
-                color: .red,
-                action: timer.startTimer
-            )
+            ButtonView(title: timer.buttonTitle, color: .red) {
+                timer.startTimer()
+            }
             Spacer()
             
-            ButtonView(title: "Log Out", color: .blue, action: logOut)
+            ButtonView(title: "Log Out", color: .blue) {
+                StorageManager.shared.clear(userManager: userManager)
+            }
         }
         .padding()
-    }
-    
-    private func logOut() {
-        StorageManager.shared.clear(userManager: userManager)
     }
 }
 
