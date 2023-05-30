@@ -6,31 +6,30 @@
 //
 
 import Foundation
+import SwiftUI
 
-class StorageManager {
+final class StorageManager {
     static let shared = StorageManager()
     
-    private let defaults = UserDefaults.standard
-    private let nameKey = "name"
-    private let isRegisterKey = "isRegister"
+    @AppStorage("user") private var userData: Data?
     
     private init() {}
     
-    func save(name: String) {
-        defaults.set(name, forKey: nameKey)
-        defaults.set(true, forKey: isRegisterKey)
+    func save(user: User) {
+        userData = try? JSONEncoder().encode(user)
     }
     
-    func fetchName() -> String {
-        defaults.string(forKey: nameKey) ?? ""
+    func fetchUser() -> User {
+        guard let user = try? JSONDecoder().decode(User.self, from: userData ?? Data())
+        else {
+            return User()
+        }
+        return user
     }
     
-    func fetchIsRegister() -> Bool {
-        defaults.string(forKey: nameKey) != ""
-    }
-    
-    func deleteName(name: String) {
-        defaults.set("", forKey: nameKey)
-        defaults.set(false, forKey: isRegisterKey)
+    func clear(userManager: UserManager) {
+        userData = nil
+        userManager.user.name = ""
+        userManager.user.isRegistered = false
     }
 }

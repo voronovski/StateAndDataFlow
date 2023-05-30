@@ -5,9 +5,19 @@
 //  Created by Aleksei Voronovskii on 4/4/23.
 //
 
-import Foundation
+import Combine
 
-class UserManager: ObservableObject {
-    var name = StorageManager.shared.fetchName()
-    @Published var isRegister = StorageManager.shared.fetchIsRegister()
+final class UserManager: ObservableObject {
+    @Published var user = User()
+    
+    init() {}
+    
+    init(user: User) {
+        self.user = user
+    }
+}
+
+struct User: Codable {
+    var name = ""
+    var isRegistered = false
 }
